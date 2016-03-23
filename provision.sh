@@ -13,4 +13,5 @@ apt-get -y install php5 libapache2-mod-php5 php5-mcrypt
 
 sed -i '12s@.*@\tDocumentRoot /var/www/public@' /etc/apache2/sites-available/000-default.conf
 rm -rf /var/www/html
+echo "ServerName localhost"
 service apache2 restart
