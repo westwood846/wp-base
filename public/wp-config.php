@@ -17,8 +17,8 @@ define('DB_COLLATE', '');
 
 define('WPLANG', '');
 
-define('WP_DEBUG_DISPLAY', false);
-define('WP_DEBUG', false);
+define('WP_DEBUG_DISPLAY', true);
+define('WP_DEBUG', true);
 
 define('AUTOMATIC_UPDATER_DISABLED', true);
 
