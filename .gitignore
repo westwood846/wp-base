@@ -2,3 +2,4 @@
 production-config.php
 local-config.php
 .vagrant
+/html

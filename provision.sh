@@ -12,6 +12,6 @@ echo "create database texwp" | mysql -u root -proot
 apt-get -y install php5 libapache2-mod-php5 php5-mcrypt
 
 sed -i '12s@.*@\tDocumentRoot /var/www/public@' /etc/apache2/sites-available/000-default.conf
-rm -rf /var/www/html
+rm -rf /var/www/html # This is created during the apache installation and needs to be removed
 echo "ServerName localhost"
 service apache2 restart
