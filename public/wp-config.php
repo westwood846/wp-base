@@ -20,7 +20,7 @@ define('WPLANG', '');
 define('WP_DEBUG_DISPLAY', false);
 define('WP_DEBUG', false);
 
-define('AUTOMATIC_UPDATER_DISABLED', false);
+define('AUTOMATIC_UPDATER_DISABLED', true);
 
 $table_prefix  = 'wp_';
 
