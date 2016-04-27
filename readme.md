@@ -2,7 +2,9 @@ A base wordpress installation with git and [Vagrant](https://www.vagrantup.com/)
 
 # Installation
 
-After cloning this repo just `vagrant up` to install the VM. It may be advisable to update wordpress and the theme (see below for instructions). If you just cloned the repo, you may also want to rename the remote so that you can use `origin` for your own repo: `git remote rename origin wp-base` (or any other name). `cp local-config-sample.php local-config.php` and optinally disable debugging and define keys and salts there.
+Clone this repo with the `--recursive` flag, it uses submodules.
+
+After cloning just `vagrant up` to install the VM. It may be advisable to update wordpress and the theme (see below for instructions). You may also want to rename the remote so that you can use `origin` for your own repo: `git remote rename origin wp-base` (or any other name). `cp local-config-sample.php local-config.php` and optionally disable debugging and define keys and salts there.
 
 Visit the wp instance on <http://localhost:8080/> and fill out the form to complete the installation.
 
@@ -24,7 +26,7 @@ git commit -m "Update wordpress to version 1.2.3" # Commit the update with a fri
 
 The procedure is the same for themes, but they may not have tags, just checkout the latest `master` in this case.
 
-It would be nice if you could push updates like these back to GitHub ;-)
+It would be nice if you could push updates like these back to the original wp-base GitHub ;-) You should also be able to pull these update-updates from there, if someone has made them in the meantime.
 
 
 # Known issues
