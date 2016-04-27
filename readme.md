@@ -2,7 +2,7 @@ A base wordpress installation with git and [Vagrant](https://www.vagrantup.com/)
 
 # Installation
 
-After cloning this repo just `vagrant up` to install the VM. It may be advisable to update wordpress and the theme (see below for instructions). If you just cloned the repo, you may also want to rename the remote so that you can use `origin` for your own repo: `git remote rename origin wp-base` (or any other name).
+After cloning this repo just `vagrant up` to install the VM. It may be advisable to update wordpress and the theme (see below for instructions). If you just cloned the repo, you may also want to rename the remote so that you can use `origin` for your own repo: `git remote rename origin wp-base` (or any other name). `cp local-config-sample.php local-config.php` and optinally disable debugging and define keys and salts there.
 
 Visit the wp instance on <http://localhost:8080/> and fill out the form to complete the installation.
 
